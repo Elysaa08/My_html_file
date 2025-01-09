@@ -1,0 +1,49 @@
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: georgia, verdana ;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center ;
+  align-items: center;
+  min-height: 100vb;
+  padding: 4rem 0;
+
+}
+.img.box img{
+  display: block;
+  width: 100;
+  height: 30rem;
+  object-fit: cover;
+}
+.grid{
+  display: grid;
+  grid-template-colums:repeat(3,1fr);
+  justify-content: center;
+  grid-gap: 2rem;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.card{
+  display: block;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  box-shadow: 0 0.5rem 1rem rgb(0,0,0,0.7);
+  cursor: pointer;
+  transition: 0.2s;
+  position: relative;
+}
+.card-content{
+  position: absolute;
+  background-color: rgba(0,0,0/50%);
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 2.2rem;
+  overflow: hidden;
+  transition:o.7s ;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	body{
+	 background-image: url('Image/bg.jpg');
+	}
+
+	.topnav 
+{
+  overflow: hidden;
+  background-color: #f9acce;
+}
+
+.topnav a 
+{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover 
+{
+  background-color: #f28cb8;
+  color: mediumvioletred;
+}
+div.header1
+{
+font-family: Times New Roman;
+padding: 10px;
+background: #9B6992;
+text-align: center;
+ font-size:20px;
+  color:whitesmoke;
+}
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+	<div class="header1">
+  <h1>My Skills</h1>
+</div>
+<div class="topnav">
+  <a href="index.html">HOMEPAGE</a>
+  <a href="Biodata.html">BIODATA</a>
+  <a href="Skills.html">SKILLS</a>
+  <a href="Education.html">EDUCATION</a>
+  <a href="Experience.html" style="float:right">EXPERIENCE</a>
+</div>
+
+<h2>Skills</h2>
+
+<button class="accordion">Communication Skills</button>
+<div class="panel">
+	<p>I use to join certain competition in my primary school and high school. This was the way my teacher encourage me to all out my talent which also my skills, which are speaking and dare to face people when talk.
+	<p> I was a prefect once in high school so there will be a school program or any event which teacher will request me to be the emcee for the program, from that i see my skills more in speak. </p></p>
+</div>
+
+<button class="accordion">Memorize Skills</button>
+<div class="panel">
+  <p>I can easily memorize the things that i read or any storyline which really helpful for me.This skills might most people have but kinda hard cause related to brain.</p>
+</div>
+
+<button class="accordion">Multiple language skills</button>
+<div class="panel">
+  <p>Since i learn mandarin in my primary school, it really help me to speak with other chinese people wherever i go.Learning mandarin might be hard at first but fun when you can speak a certain word and recognize it.I will always speak mandarin with my siblings since my siblings also study in mandarin school as me, it easy for me to practice my mandarin through my siblings.Mandarin have be our daily language to speak.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
